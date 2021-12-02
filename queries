@@ -1,0 +1,34 @@
+// 1er ejercicio:
+
+SELECT nombre, apellido, fecha_nacimiento
+FROM profesor
+ORDER BY fecha_nacimiento ASC
+
+// 2do ejercicio:
+
+SELECT id, nombre, apellido, salario 
+FROM profesor
+WHERE salario >= 65000
+
+// 3er ejercicio:
+
+SELECT id, nombre, apellido, fecha_nacimiento, salario 
+FROM profesor
+WHERE fecha_nacimiento BETWEEN 1980 AND 1990
+
+// 4to ejercicio:
+
+DELETE from profesor
+WHERE id = 6
+
+// 5to ejercicio:
+
+SELECT apellido
+FROM profesor
+WHERE apellido LIKE "p%"
+
+// 6to ejercicio:
+
+SELECT fecha_nacimiento, salario
+FROM profesor
+WHERE salario > 80000 AND fecha_nacimiento BETWEEN 1980 AND 1990 
